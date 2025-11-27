@@ -1,0 +1,11 @@
+# Section 753: Partner receiving income in respect of decedent
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: 691, 736
+
+## Content
+
+The amount includible in the gross income of a successor in interest of a deceased partner under section 736(a) shall be considered income in respect of a decedent under section 691. ( Aug. 16, 1954, ch. 736 , 68A Stat. 251 .)
+

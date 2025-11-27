@@ -1,0 +1,11 @@
+# Section 4902: Liability of partners
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+Any number of persons doing business in copartnership at any one place shall be required to pay but one special tax. ( Aug. 16, 1954, ch. 736 , 68A Stat. 593 .)
+

@@ -1,0 +1,11 @@
+# Section 4422: Applicability of Federal and State laws
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+The payment of any tax imposed by this chapter with respect to any activity shall not exempt any person from any penalty provided by a law of the United States or of any State for engaging in the same activity, nor shall the payment of any such tax prohibit any State from placing a tax on the same activity for State or other purposes. ( Aug. 16, 1954, ch. 736 , 68A Stat. 528 .)
+

@@ -1,0 +1,11 @@
+# Section 7474: Fee for transcript of record
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+The Tax Court is authorized to fix a fee, not in excess of the fee fixed by law to be charged and collected therefor by the clerks of the district courts, for comparing, or for preparing and comparing, a transcript of the record, or for copying any record, entry, or other paper and the comparison and certification thereof. ( Aug. 16, 1954, ch. 736 , 68A Stat. 888 .)
+

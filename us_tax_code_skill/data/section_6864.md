@@ -1,0 +1,11 @@
+# Section 6864: Termination of extended period for payment in case of carryback
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: 6164
+
+## Content
+
+For termination of extensions of time for payment of income tax granted to corporations expecting carrybacks in case of jeopardy, see section 6164(h). ( Aug. 16, 1954, ch. 736 , 68A Stat. 837 .)
+

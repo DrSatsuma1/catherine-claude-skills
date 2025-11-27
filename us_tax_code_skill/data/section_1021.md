@@ -1,0 +1,11 @@
+# Section 1021: Sale of annuities
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+In case of the sale of an annuity contract, the adjusted basis shall in no case be less than zero. ( Aug. 16, 1954, ch. 736 , 68A Stat. 302 .)
+

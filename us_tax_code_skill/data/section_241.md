@@ -1,0 +1,11 @@
+# Section 241: Allowance of special deductions
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+In addition to the deductions provided in part VI (sec. 161 and following), there shall be allowed as deductions in computing taxable income the items specified in this part. ( Aug. 16, 1954, ch. 736 , 68A Stat. 72 .)
+

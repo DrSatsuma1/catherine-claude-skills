@@ -1,0 +1,11 @@
+# Section 536: Income not placed on annual basis
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: 443, 531
+
+## Content
+
+Section 443(b) (relating to computation of tax on change of annual accounting period) shall not apply in the computation of the accumulated earnings tax imposed by section 531. ( Aug. 16, 1954, ch. 736 , 68A Stat. 182 .)
+

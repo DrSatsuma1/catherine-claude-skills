@@ -1,0 +1,11 @@
+# Section 1241: Cancellation of lease or distributor’s agreement
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+Amounts received by a lessee for the cancellation of a lease, or by a distributor of goods for the cancellation of a distributor’s agreement (if the distributor has a substantial capital investment in the distributorship), shall be considered as amounts received in exchange for such lease or agreement. ( Aug. 16, 1954, ch. 736 , 68A Stat. 333 .)
+

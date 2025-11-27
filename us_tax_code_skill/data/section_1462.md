@@ -1,0 +1,11 @@
+# Section 1462: Withheld tax as credit to recipient of income
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+Income on which any tax is required to be withheld at the source under this chapter shall be included in the return of the recipient of such income, but any amount of tax so withheld shall be credited against the amount of income tax as computed in such return. ( Aug. 16, 1954, ch. 736 , 68A Stat. 360 .)
+

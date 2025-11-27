@@ -1,0 +1,11 @@
+# Section 2524: Extent of deductions
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+The deductions provided in sections 2522 and 2523 shall be allowed only to the extent that the gifts therein specified are included in the amount of gifts against which such deductions are applied. ( Aug. 16, 1954, ch. 736 , 68A Stat. 414 .)
+

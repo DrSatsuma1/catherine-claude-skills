@@ -1,0 +1,11 @@
+# Section 9500: Short title
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+This subtitle may be cited as the “Trust Fund Code of 1981”. (Added Pub. L. 97–119, title I, § 103(a) , Dec. 29, 1981 , 95 Stat. 1636 .)
+

@@ -1,0 +1,11 @@
+# Section 8003: Election of chairman and vice chairman
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+The Joint Committee shall elect a chairman and vice chairman from among its members. ( Aug. 16, 1954, ch. 736 , 68A Stat. 926 .)
+

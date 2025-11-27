@@ -1,0 +1,11 @@
+# Section 6064: Signature presumed authentic
+
+## Metadata
+- **Subtitle**: 
+- **Chapter**: 
+- **Cross-references**: None
+
+## Content
+
+The fact that an individual’s name is signed to a return, statement, or other document shall be prima facie evidence for all purposes that the return, statement, or other document was actually signed by him. ( Aug. 16, 1954, ch. 736 , 68A Stat. 749 .)
+
