@@ -5,122 +5,37 @@ description: Use when fixing bugs, something broken, not working, or doesn't wor
 
 # React Architecture Enforcer
 
-## When to Use
+## Triggers
 
-**Trigger phrases (use this skill immediately):**
-- "broken", "not working", "doesn't work", "fix it", "fix this"
-- "quick", "simple", "just add", "minimal changes"
-- "follow pattern", "follow existing", "match current"
+**Phrases:** "broken", "not working", "fix", "quick", "simple", "just add", "follow pattern", "match current"
 
-**Context triggers:**
-- Modifying any React component
-- Adding features or fixing bugs
-- File >200 lines
-- Adding useState, useEffect, useMemo
+**Context:** Modifying React components, adding features/fixes, file >200 lines, adding hooks
 
 ## The Five Laws
 
-| Law | Rule | Violation = HALT |
-|-----|------|------------------|
-| **A. No Logic in UI** | UI components contain NO: prerequisites, credits, progression, catalog normalization, scheduling, eligibility | Extract to `/domain`, `/services`, `/config` |
-| **B. No Mutating Singletons** | Engines must be pure functions or stateless services | Refactor to pure functions |
-| **C. No File >300 Lines** | Check with `wc -l <file>` before ANY edit | Extract before implementing |
-| **D. No Duplicated Logic** | Credits, prerequisites, eligibility, deduplication, path-matching = ONE canonical source | Find existing, refuse duplication |
-| **E. No Unexamined Effects** | New useEffect requires: justification, dependency audit, store alternative, persistence safety check | Document all four or reject |
+| Law | Rule | On Violation |
+|-----|------|--------------|
+| **A. No Logic in UI** | Components contain NO: prerequisites, credits, progression, scheduling, eligibility | Extract to `/domain`, `/services`, `/config` |
+| **B. No Mutating Singletons** | Engines = pure functions or stateless services | Refactor to pure functions |
+| **C. No File >300 Lines** | Check `wc -l` before ANY edit | Extract before implementing |
+| **D. No Duplicated Logic** | Credits, prerequisites, eligibility = ONE canonical source | Find existing first |
+| **E. No Unexamined Effects** | New useEffect requires: justification, dependency audit, store alternative check | Document or reject |
 
-## Pre-Flight Gatekeeper (MANDATORY)
+## Pre-Flight (MANDATORY)
 
-**Run BEFORE generating any code:**
-
-```bash
-# Step 1: Check file size
-wc -l <target-file>.jsx
-# >300 = HALT, extraction required
-```
-
-**Step 2: Scan request for pressure words**
-`quick` `simple` `temporary` `minimal` `follow existing` `match current` `don't refactor`
-→ If found: **PRESSURE OVERRIDE MODE** (see below)
-
-**Step 3: Estimate change size**
-- Adding >30 lines → extraction required
-- Target file >300 lines → extraction required
-
-**Step 4: Check logic category**
-Does request touch: credits | pathways | prerequisites | GPA | catalog | eligibility | scheduling?
-→ If yes: search for existing implementation first, refuse inline duplication
-
-## Pressure Override Mode
-
-When pressure words detected, you MUST:
-
-1. **Output extraction plan FIRST** (before any code)
-2. **State which Law would be violated** without extraction
-3. **Propose safe alternative**
-4. **Only proceed after user confirms extraction path**
-
-No code generation until extraction plan is acknowledged.
+1. **Check size:** `wc -l <file>` — >300 lines = HALT
+2. **Check pressure words:** `quick`, `simple`, `temporary`, `minimal`, `follow existing` → require extraction plan FIRST
+3. **Check logic type:** credits | pathways | prerequisites | GPA | eligibility | scheduling → search existing first
 
 ## Rationalization Overrides
 
-| Excuse | Response |
-|--------|----------|
-| "Pattern already exists" | Existing patterns created the violation. Extraction required. |
-| "User said keep it simple" | Simplicity ≠ debt. Architecture rules override. |
-| "One more won't hurt" | Incremental bloat is the threat. Extraction required. |
-| "That's refactoring, not the feature" | Refactoring IS the prerequisite. Feature blocked until extracted. |
-| "Don't over-engineer" | Structural correction ≠ over-engineering. |
-| "File is already large" | Size IS the problem. No additions allowed. |
-| "Follow the same pattern" | Pattern is architecturally invalid. Replication rejected. |
-| "Inline is safer for hotfix" | Inline worsens long-term risk. Boundaries required. |
-| "It's just a small fix" | Line count irrelevant. Laws apply to ALL changes. |
-| "Production is down" | Emergency ≠ implicit insistence. Output plan anyway (30 seconds). |
-| "File is 299 lines" | Rule is prospective. If change pushes >300, extraction required. |
-| "Modifying, not adding" | Extending violations perpetuates them. Plan required. |
-| "Logic is slightly different" | If describable in same sentence, it's duplication. Extract with params. |
-| "We'll refactor next sprint" | Requires: ticket number + sprint + owner name. Vague = rejected. |
-| "Extraction takes too long" | Write the plan (5 min). "Too long" without plan is a guess. |
-
-## Trivial Changes Exception
-
-**Exempt from extraction planning:**
-- Comments and formatting
-- Temporary debug logs (removed before commit)
-
-**NOT exempt:**
-- Debug logs that stay in committed code
-- "Small" logic changes (Laws apply regardless of size)
-- Test files (>300 lines = split by feature)
-
-## Escalation Path
-
-1. **First violation:** "This violates Law [X]. Extraction required before proceeding."
-2. **User insists:** Offer minimal safe extraction path with specific files
-3. **User overrides again:** "Proceed in unsafe mode? This will be tagged as technical debt."
-4. **If confirmed:** Generate code with tag:
-   ```javascript
-   // TECH-DEBT: Architecture violation (Law X) - approved override [date]
-   ```
-
-## Output Format
-
-All architecture-touching changes must include:
-
-```markdown
-## Pre-Flight Results
-- File: [name] ([X] lines)
-- Laws checked: [which passed/failed]
-
-## Extraction Plan
-- [What logic] → [destination file]
-
-## Refactoring Notes
-- Existing code changes: [list]
-- New dependencies: [list]
-
-## Implementation
-[code]
-```
+| Pattern | Response |
+|---------|----------|
+| "Pattern exists / follow existing" | Existing violations don't justify new ones. Extract. |
+| "It's small / quick / simple" | Size doesn't exempt from laws. Extract. |
+| "We'll refactor later" | Requires ticket + sprint + owner. Vague = rejected. |
+| "Emergency / production down" | Still output extraction plan (30 sec). Then proceed. |
+| "File is already large" | Size IS the problem. No additions without extraction. |
 
 ## Extraction Reference
 
@@ -133,8 +48,12 @@ All architecture-touching changes must include:
 | Data fetching | `services/<name>Service.js` |
 | Scheduling/eligibility | `domain/<Name>Engine.js` |
 
-## The Iron Rule
+## Escalation
 
-**You cannot add to a file violating thresholds without extracting first.**
+1. "This violates Law [X]. Extraction required."
+2. If user insists → offer minimal extraction path
+3. If user overrides → tag code: `// TECH-DEBT: Law X violation [date]`
 
-No exceptions. No "just this once." Extract first. Then add.
+## Exempt
+
+Comments, formatting, temporary debug logs (removed before commit)
